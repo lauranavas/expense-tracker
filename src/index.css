@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(
+    137.04956675184533% 99.99999999999997% at 50.000008168790735% -3.977765894447316e-7%,
+    #ffffff 5.590588226914406%,
+    rgba(254, 255, 245, 0.9) 29.16666567325592%,
+    rgba(254, 230, 255, 0.5) 84.51528072357178%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.form-item {
+  @apply w-full flex flex-col justify-start items-stretch sm:flex-row sm:justify-normal sm:items-start my-4;
+}
+
+.form-label,
+.form-control {
+  @apply w-full;
+}
+
+.form-label {
+  @apply font-semibold text-pink-900 sm:pl-3;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+  @apply w-full bg-pink-200 text-pink-700 px-4 py-3 rounded-xl font-semibold focus:ring-4 focus:ring-pink-600 focus:outline-double focus:outline-pink-600;
+}
+
+.form-control p {
+    @apply text-red-500 font-semibold
+}
